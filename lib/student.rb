@@ -4,7 +4,7 @@ class Student
   attr_accessor :name, :grade
   attr_reader :id
 
-  def initialize(name:, grade:, id: nil)
+  def initialize(name, grade, id=nil)
     @name = name
     @grade = grade
     @id = id
@@ -54,8 +54,7 @@ class Student
   end
 
   def self.new_from_db(row)
-    new_student = self.new(name, grade, id)
-    # new_student = self.new(row[1], row[2], row[0])
+    new_student = self.new(row[1], row[2], row[0])
   end
 
   def self.find_by_name(name)
