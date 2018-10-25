@@ -8,12 +8,4 @@ class Student
     @id = id
   end
 
-  def name=(name)
-    @name = name
-  end
-
-  def name
-    @name
-  end
-
 end
