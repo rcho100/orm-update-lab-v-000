@@ -7,5 +7,9 @@ class Student
     @id = id
   end
 
+  def name=(name)
+    @name = name
+  end
+
 
 end
